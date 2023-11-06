@@ -1,9 +1,9 @@
-import { TituloStyle } from "./styled";
+import { StyledTitulo } from "./styled";
 
 export default function Titulo({ texto, destaque }) {
     return(
-        <TituloStyle>
+        <StyledTitulo>
             <h1>{texto}</h1> <strong>{destaque}</strong>
-        </TituloStyle>
+        </StyledTitulo>
     );
 }

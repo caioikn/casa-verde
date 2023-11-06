@@ -1,8 +1,8 @@
-import { Header } from "./styled";
+import { StyledHeader } from "./styled";
 
 export default function Menu() {
     return (
-        <Header>                
+        <StyledHeader>                
             <img src="/images/logo.svg" alt="Logo Casa Verde" />
 
             <nav>
@@ -26,6 +26,6 @@ export default function Menu() {
                     <a href="/">Meu carrinho</a>
                 </li>
             </nav>
-        </Header>
+        </StyledHeader>
     );
 }

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TituloStyle = styled.div`
+export const StyledTitulo = styled.div`
     h1 {
         font-size: 1.375rem;
         font-weight: 400;
