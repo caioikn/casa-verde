@@ -8,6 +8,7 @@ export default function AssinaturaNewsLetter() {
 
     function handleChange(event) {  
         setEmail(event.target.value);
+        setBotao(true);
 
         if (email.length + 1 > 10) {
             setBotao(false);
@@ -16,8 +17,6 @@ export default function AssinaturaNewsLetter() {
 
     function handleSubmit(event) {
         event.preventDefault();
-
-        console.log(email);
 
         alert(`Obrigado pela sua assinatura, você receberá nossas novidades no e-mail ${email}.`);
 
@@ -28,8 +27,8 @@ export default function AssinaturaNewsLetter() {
     return (
         <NewsletterWrapper>
             <Titulo 
-                texto={'Sua casa com as'}
-                destaque={'melhores plantas'}
+                texto='Sua casa com as'
+                destaque='melhores plantas'
             />
             
             <StyledParagrafo>Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-la uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.</StyledParagrafo>

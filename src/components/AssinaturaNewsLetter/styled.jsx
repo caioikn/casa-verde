@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const NewsletterWrapper = styled.section`
     color: #202020;
     margin-top: 9.5rem;
+    padding-left: 22.5rem;
     width: 50%;
 `;
 
@@ -37,8 +38,12 @@ export const StyledFormulario = styled.form`
         cursor: pointer;
         font-family: 'Montserrat', sans-serif;
         padding: 1.75rem 1.5rem;
+        transition: background-color 0.2s;
 
         &:disabled {
+            background-color: #CCCCCC;
+            border: 2px solid #CCCCCC;
+            box-shadow: 0px 0px 0px 0px;
             cursor: not-allowed;
         }
     }
